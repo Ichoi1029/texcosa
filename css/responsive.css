@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* ========================= tablet ========================= */
+@media (max-width: 1024px){
+    .inner{
+        padding: 0;
+    }
+    /* header */
+    .gnb{
+        position: fixed;
+        margin-top: 80px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gnb-item{
+        width: 100%;
+        text-align: center;
+        background: var(--primary-color);
+        padding: 4px;
+        display: none;
+    }
+    .gnb-toggle-btn{
+        display: block;
+        padding-top: 10px;
+    }
+    .gnb.active .gnb-item{
+        display: block;
+    }
+    .slider-container h1{
+        font-size: 2rem;
+    }
+
+    /* footer */
+    footer p{
+        font-size: var(--font-inform);
+    }
+}
+/* ========================= mobile page ========================= */
+@media (max-width: 767px){
+    /* common */
+    .phone-button{
+        display: block;
+    }
+    /* index page */
+    .main__banner img{
+        padding-top: 100px;
+    }
+}

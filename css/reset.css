@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+body {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+button{
+    border: 0;
+    outline: 0;
+    background: none;
+}
+.inner{
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* ========================= font ========================= */
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ========================= common ========================= */
+
+:root{
+    /* color */
+    --primary-color:rgb(255, 255, 255); 
+    --primary-bg:white;
+    --secondary-color:#111;
+    --thertiary-color:rgb(194, 194, 194);
+    --quaternary-color:#fff;
+    --color-inform:red;
+    --color-edge:rgb(143, 143, 143);
+    --color-naver:#2DB400;
+    /* font size */
+    --font-large:3rem;
+    --font-medium:1.5rem;
+    --font-small:1rem;
+    --font-inform:10px;
+    --font-mobile:11px;
+    --font-mobile-title:15px;
+    /* font-weight */
+    --font-heavy:900;
+    --font-slightly-heavy:700;
+    --font-light:600;
+}
+
+h1{
+    font-size: var(--font-large);
+    font-family: 'Anton', sans-serif;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+}
+p{
+    font-family: 'NEXON Lv1 Gothic OTF';
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* ========================= header ========================= */
+.header{
+    background: var(--primary-color);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    box-shadow: 3px 3px 3px rgba(87, 87, 87, 0.774);
+}
+.logo{
+    justify-content: left;
+    width: 100%;
+    height: 100px;
+}
+.logo img{
+    width: 250px;
+    padding-top: 20px;
+    height: auto;
+    margin: 5px;
+}
+.gnb{
+    display: flex;
+    justify-content: center;
+    background: var(--primary-bg);
+}
+.gnb-item{
+    padding:30px;
+}
+.gnb-item:hover {
+    color:blue;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.gnb-toggle-btn{
+    position: absolute;
+    right: 32px;
+    font-size: 40px;
+    color: white;
+    top: 10px;
+}
+
+/* ========================= toggle ========================= */
+.gnb-toggle-btn{
+    display: none;
+    color: gray;
+}
+/* ========================= aside ========================= */
+.sns{
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    z-index: 9;
+}
+.sns img{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    z-index: 9;
+}
+.sns img:hover{
+    animation: flip;
+    animation-duration: 1s;
+}
+
+.phone-button{
+    position: fixed;
+    bottom: 60px;
+    left: 80px;
+}
+.phone-button:hover{
+    animation: flip;
+    animation-duration: 1s;
+}
+
+/* ========================= footer ========================= */
+footer{
+    font-size:12px;
+    font-weight: 700;
+    text-align: center;
+    background: var(--primary-color);
+    height: 10rem;
+    padding-top: 2rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+.inner{
+    padding-top: 100px;
+}
+.inner h1{
+    margin-top: -4rem;
+    padding-left: 1rem;
+}
+/* ========================= main banner ========================= */
+.main__banner img {
+    padding-top: 4.5rem;
+    width: 100%;
+}
+
+/* arrow */
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev:after,
+.slick-next:after{
+    font-size: 3rem;
+    color: var(--thertiary-color);
+}
+.slick-prev:after,
+.slick-next:after{
+    font-family: unicons-line;
+}
+.slick-prev:after {
+    content: '\ec49';
+}
+.slick-next:after {
+    content: '\eb9f';
+}
+
+/* progress */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -2rem;
+    cursor: pointer;
+}
+/* active된 dot */
+.slick-dots li.slick-active button {
+    background:rgb(0, 0, 0);
+}
+/* 나머지 dot */
+.slick-dots li button {
+    background: var(--thertiary-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 0;
+    margin-top: -15px;
+} 
+
+/* ========================= slider ========================= */
+.slider__content img{
+    width: 100%;
+    height: auto;
+    margin-top: -10px;
+
+}
+/* ====================================== poster page ====================================== */
+
