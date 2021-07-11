@@ -130,13 +130,24 @@ p{
     animation: flip;
     animation-duration: 1s;
 }
-
+.button{
+    position: fixed;
+    bottom: 20px;
+}
+.kakao {
+    position: fixed;
+}
 .phone-button{
     position: fixed;
-    bottom: 60px;
     left: 80px;
 }
-.phone-button:hover{
+.korean{
+    left: 140px;
+}
+.japanese{
+    left: 200px;
+}
+.button:hover{
     animation: flip;
     animation-duration: 1s;
 }
@@ -196,6 +207,13 @@ p{
     display: none;
 } 
 /* ====================================== about ====================================== */
+.section{
+    padding-top: 90px;
+}
+#about h3{
+    font-weight: bold;
+    text-align: center;
+}
 .inner{
     padding: 4rem;
 }
@@ -291,6 +309,13 @@ p{
 }
 .shopping img{
     box-shadow: 3px 3px 3px rgba(43, 43, 43, 0.219);
+}
+.shopping-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.shopping-container p{
+    padding: 1rem;
 }
 .naver-shopping{
     display: flex;

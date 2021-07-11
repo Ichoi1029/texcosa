@@ -8,15 +8,16 @@
     /* header */
     .gnb{
         position: fixed;
-        margin-top: 80px;
+        top: 0;
+        right: 0;
         width: 100%;
         flex-direction: column;
         align-items: center;
+        box-shadow: 3px 3px 3px gray;
     }
     .gnb-item{
         width: 100%;
         text-align: center;
-        background: var(--primary-color);
         padding: 4px;
         display: none;
     }
@@ -26,6 +27,8 @@
     }
     .gnb.active .gnb-item{
         display: block;
+        background: rgb(255, 255, 255);
+        padding: 0;
     }
     .slider-container h1{
         font-size: 2rem;
