@@ -46,4 +46,62 @@
     .main__banner img{
         padding-top: 100px;
     }
+    .about{
+        padding: 1rem;
+    }
+    .about h2,
+    .product h2,
+    .service h2,
+    .shopping-container h2,
+    .gallerys h2{
+        font-size: 20px;
+        padding: 1rem;
+        padding-top: 30px;
+    }
+    .about p,
+    .product p{
+        font-size: 12px;
+    }
+    .plant .notice{
+        visibility: visible;
+        padding: none;
+        padding-left: 10px;
+    }
+    .product-container{
+        display: block;
+    }
+    .product-container .img{
+        background-size: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .product .img:hover{
+        background-size: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .service img{
+        width: 100px;
+    }
+    .service p{
+        font-size: 6px;
+        height: 60px;
+        text-align: left;
+        padding: 4px;
+    }
+    .shopping p{
+        text-align: center;
+    }
+    .naver-shopping{
+        display: block;
+        text-align: center;
+    }
+    .naver-shopping img{
+        width: 400px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
