@@ -63,6 +63,9 @@ p{
     text-align: center;
     color: rgb(44, 44, 44);
 }
+hr{
+    margin: 2rem;
+}
 /* ========================= header ========================= */
 .header{
     background: var(--primary-color);
@@ -116,13 +119,13 @@ p{
 /* ========================= aside ========================= */
 .sns{
     position: fixed;
-    bottom: 60px;
+    bottom: 80px;
     left: 20px;
     z-index: 9;
 }
 .sns img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     padding: 5px;
     z-index: 9;
 }
@@ -140,12 +143,6 @@ p{
 .phone-button{
     position: fixed;
     left: 80px;
-}
-.korean{
-    left: 140px;
-}
-.japanese{
-    left: 200px;
 }
 .button:hover{
     animation: flip;
@@ -208,7 +205,7 @@ p{
 } 
 /* ====================================== about ====================================== */
 .section{
-    padding-top: 90px;
+    padding-top: 110px;
 }
 #about h3{
     font-weight: bold;
@@ -285,6 +282,47 @@ p{
     text-align: left;
     padding: 10px;
 }
+.t-img{
+    background: url(../img/service4.jpg) no-repeat center/cover;
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.t-img:hover{
+    background: url(../img/product12.jpeg) no-repeat center/cover;
+}
+.m-img{
+    background: url(../img/service2.jpg) no-repeat center/cover;
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.m-img:hover{
+    background: url(../img/product13.jpeg) no-repeat center/cover;
+}
+.c-img{
+    background: url(../img/service3.jpg) no-repeat center/cover;
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.c-img:hover{
+    background: url(../img/product.jpg) no-repeat center/cover;
+}
+.ex-img{
+    background: url(../img/service1.jpg) no-repeat center/cover;
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.ex-img:hover{
+    background: url(../img/clear.jpg) no-repeat center/cover;
+}
+
 .shopping-container h2{
     font-weight: 900;
 }
@@ -300,6 +338,10 @@ p{
     text-align: center;
     box-shadow: 3px 3px 3px rgba(43, 43, 43, 0.219);
     margin: 0 auto;
+}
+.photo:after{
+    width: 400px;
+    background: chartreuse;
 }
 .phone-ask{
     background: #009345;
@@ -333,6 +375,19 @@ p{
 .contact .mail{
     padding-top: 40px;
     text-align: center;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.icon-container i {
+    background: rgb(77, 77, 77);
+    width: 60px;
+    height: 60px;
+    color: white;
+    line-height: 60px;
+    margin: 1rem;
 }
 .gallerys h2{
     font-weight: 900;

@@ -55,7 +55,7 @@ $('.responsive__slider').slick({
 
 var $modal = $('.modal');
 var $overlay = $('.overlay');
-var $btn = $('button');
+var $btn = $('.md-button');
 var $btnClose = $('.close__modal');
 
     $overlay.hide();

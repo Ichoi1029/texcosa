@@ -92,6 +92,12 @@
         text-align: left;
         padding: 4px;
     }
+    .service li{
+        width: 100%;
+    }
+    .service img{
+        width: 100%;
+    }
     .shopping p{
         text-align: center;
     }
